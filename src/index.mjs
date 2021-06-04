@@ -23,4 +23,4 @@ app.get("/", async (req, res) => {
   res.render("index", { newsList });
 });
 
-app.listen(3000, () => console.log(`Está rodando na porta ${PORT}`));
+app.listen(PORT, () => console.log(`Está rodando na porta ${PORT}`));
