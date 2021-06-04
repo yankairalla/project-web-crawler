@@ -1,0 +1,23 @@
+{
+  "name": "projeto-web-crawler",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Um projeto da faculdade contendo um web crawler",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.mjs",
+    "dev": "nodemon src/index.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.9",
+    "express": "^4.17.1",
+    "http-server": "^0.12.3",
+    "node-fetch": "^2.6.1",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

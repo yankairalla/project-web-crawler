@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", crossorigin="anonymous")
+        link(href="main.css")
+    body
+        header 
+            div(class="navbar navbar-dark bg-dark box-shadow") 
+                div(class="container")
+                    h1(class="navbar-brand ") Noticias
+        div(class="grid-news container py-5 pt-5")
+            div(class="row") 
+                each news in newsList
+                    div(class="col-4 mb-4 box-shadow")
+                        a(href=news.link)  
+                            div(class="card", style="width: 18rem;")
+                                img(class="card-img-top", src=news.img)
+                                div(class="card-body")
+                                    h5(class="card-title")= news.title
+                                    p(class="card-text")= news.description
